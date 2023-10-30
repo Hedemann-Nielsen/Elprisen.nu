@@ -26,12 +26,10 @@
     color: #55EC20;
     text-align: center;
     font-family: Roboto;
-    font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     z-index: 1;
-    font-variant: all-small-caps;
+    text-transform: uppercase;
 
 }
 .linje1 {
@@ -39,7 +37,6 @@
 }
 .linje2 {
     font-size: 16px;
-
 }
 
 .tid {
