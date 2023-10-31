@@ -1,3 +1,6 @@
+@import url(./main-stylesheet-oversigt.css);
+
+
 .navigation {
     background-color: var(--dark);
     display: flex;

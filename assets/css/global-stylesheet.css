@@ -37,17 +37,17 @@ body {
 /* overskrift */
 .elpris h2 {
     text-align: center;
-    font-family: Roboto;
     font-size: 32px;
-    font-style: normal;
     font-weight: 300;
-    line-height: normal;
-    font-variant: all-small-caps;
+    text-transform: uppercase;
     margin-top: 20px;
 }
 
 /* footer */
 footer {
+    margin-top: 100px;
+}
+.footer-wrapper {
     position: fixed;
     bottom: 0;
     width: 100%;
