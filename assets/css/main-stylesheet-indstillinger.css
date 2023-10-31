@@ -1,0 +1,52 @@
+.elpris h2 {
+    margin-top: 50px;
+}
+
+.settings-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+    margin-top: 49px;
+}
+
+.toggle {
+    position: relative;
+    width: 63px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 64px;
+    background: var(--dark);
+    border: 1px dashed var(--dark);
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle .dot {
+    width: 24px;
+    height: 24px;
+    background: var(--green);
+    right: 3px;
+    top: 3px;
+    position: absolute;
+    border-radius: 100%;
+    transition: all 200ms ease;
+}
+
+.toggle input:checked + .dot {
+    right: 43px;
+    border: 2px dashed #55EC20;
+}
+
+
+.toggle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -15px;
+    margin: 10px;
+}

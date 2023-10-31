@@ -1,0 +1,35 @@
+@import url(./main-stylesheet-indstillinger.css);
+
+.navigation {
+    background-color: var(--dark);
+    display: flex;
+    height: 55px;
+    justify-content:space-around;
+}
+.navigation ul {
+    /* background-color: re d; */
+    display: flex;
+    list-style: none;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.navigation ul svg {
+    width: 45px;
+    margin: auto;
+}
+.navigation ul li {
+    padding: 0 5px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--font);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+

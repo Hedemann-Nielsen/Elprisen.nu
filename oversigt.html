@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="./assets/css/nav-stylesheet-oversigt.css">
     <!-- Java -->
     <script type="module" src="./assets/js/oversigt.js" defer></script>
+    <script type="module" src="./assets/js/global.js" defer></script>
+
     <!-- fontawsome -->
 	<script src="https://kit.fontawesome.com/11e7a87280.js" crossorigin="anonymous"></script>
-	<!-- Gear -->
-    <!-- <i class="fa-solid fa-gear"></i> -->
-    <!-- x-mark -->
+      <!-- x-mark -->
     <!-- <i class="fa-solid fa-circle-xmark"></i> -->
-    <!-- calender -->
-    <!-- <i class="fa-solid fa-calendar-days"></i> -->
+
     <title>Elpriser.nu - oversigt</title>   
     <link rel="icon" href="assets/logos/mainIcon.ico">
 
@@ -62,14 +61,15 @@
 </header>
 <!-- main content -->
 <main>
-  <!-- installering -->
+  <!-- indstillinger -->
   <secktion class="installering">
-      <i class="fa-solid fa-gear"></i>
+      <i id="settings"  class="fa-solid fa-gear"></i>
   </secktion>
   <!-- overskrift -->
   <secktion class="elpris">
       <h2>oversigt</h2>
   </secktion>
+  <!-- højeste og laveste pris hjul -->
   <section class="pris-hjul-wrapper">
     <div class="laveste-pris-hjul">
       <div class="yderst hjul">
