@@ -51,4 +51,44 @@
     text-align: center;
 }
 
+.desktop-wrapper {
+    display: none;
+}
+.mobile-wrapper {
+    display: block;
+}
+@media (min-width: 600px) {
+    .mobil-wrapper {
+    display: none;
+    }
+    .desktop-wrapper {
+        display: block;
+    }
+  
+    /* desktop version */
+
+.grid-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.container1, .container2, .container3 {
+    width: 350px;
+    /* height: fit-content; */
+    background-color: bisque;
+}
+.tid {
+    position: relative;
+    width: 100%;
+    top: 300px;
+    color: var(--green);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center; 
+}
+}
+
 

@@ -9,10 +9,11 @@
   .laveste-pris-hjul,
   .højeste-pris-hjul {
     position: relative;
-    width: 112px; 
-    height: 112px; 
+    width: 120px; 
+    height: 120px; 
     display: flex;
     flex-direction: column;
+
   }
   
   .laveste-pris-hjul svg,
@@ -36,7 +37,7 @@
 .inderst {
     width: 96px;
     height: 96px;
-    fill: var(--dark)
+    fill: var(--dark);
 }
 
 /* pris inden i hjulet */

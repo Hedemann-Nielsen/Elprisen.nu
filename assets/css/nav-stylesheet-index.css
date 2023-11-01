@@ -1,6 +1,6 @@
 @import url(./main-stylesheet-index.css);
 
-.navigation {
+.navigation{
     background-color: var(--dark);
     display: flex;
     justify-content: space-between;
@@ -9,22 +9,22 @@
     top: 0;
     height: 55px;
 }
-.navigation ul {
+.navigation ul{
     display: flex;
     justify-content: flex-end;
-        margin: 0 auto;
+    margin: 0 auto;
 }
 
-.navigation ul svg {
+.navigation ul svg{
     width: 45px;
     margin: auto;
 }
-.navigation ul li {
+.navigation ul li{
     list-style: none;
     padding: 1rem 0.5rem;
 }
 
-.navigation ul li a {
+.navigation ul li a{
     text-decoration: none;
     color: var(--font);
     text-transform: uppercase;
@@ -36,4 +36,61 @@
 
 .navigation ul li:nth-child(2) a {
     color: var(--green);
+}
+
+/* Desktop view */
+.nav-bar-desktop{
+    background-color: var(--dark);
+
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    margin: auto;
+    height: 55px;
+}
+.nav-bar-desktop{
+    background-color: var(--dark);
+
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    margin: auto;
+    height: 55px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.desktop-settings {
+   color: var(--green);
+   width: 22px;
+   height: 23px;
+   margin-top: 5px;
+
+}
+.left-side {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    /* margin-top: 5px; */
+}
+
+.desktop-settings {
+   color: var(--green);
+   width: 22px;
+   height: 23px;
+   margin-top: 5px;
+
 }

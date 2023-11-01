@@ -24,11 +24,9 @@ settings.addEventListener("click", () => {
 }
 
 // rotation af pil ved valg af region 
-
 const regionSelect = document.getElementById('regionSelect');
 const arrowIcon = document.getElementById('arrowIcon');
-if (regionSelect) {
+
 regionSelect.addEventListener("click", () => {
   arrowIcon.classList.toggle("rotate");
 });
-}
