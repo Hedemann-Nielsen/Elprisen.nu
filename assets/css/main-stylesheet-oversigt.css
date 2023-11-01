@@ -1,5 +1,6 @@
 .pris-hjul-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0 50px;
@@ -25,7 +26,7 @@
     height: 100%;
   }
 
-  .yderst {
+  .yderst-oversigt {
     width: 112px;
     height: 112px;
     fill: var(--dark);
@@ -34,7 +35,7 @@
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
-.inderst {
+.inderst-oversigt {
     width: 96px;
     height: 96px;
     fill: var(--dark);

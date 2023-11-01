@@ -20,13 +20,14 @@ console.log(month);
 
 // timen lige nu
 const timenNu = document.getElementById('tid');
-const timenNuDesktop = document.getElementById('tid-desktop');
+const timenNuDesktop = document.getElementById('tidDesktop');
 
 const currentHour = today.getHours();
 const nextHour = today.getHours() + 1;
 console.log(`${currentHour}:00 - ${nextHour}:00`);
 
 timenNu.innerHTML = `${currentHour}:00 - ${nextHour}:00`;
+timenNuDesktop.innerHTML = `${currentHour}:00 - ${nextHour}:00`;
 
 // view for east til index siden
 
@@ -37,6 +38,10 @@ async function prisNuEast() {
     console.log(dataEast);  
     const priceNowEast = document.getElementById('prisNu');
     priceNowEast.innerHTML = dataEast[currentHour].DKK_per_kWh.toFixed(3);
+
+    const priceNowEastDesktop = document.getElementById('prisNuDesktop');
+    priceNowEastDesktop.innerHTML = dataEast[currentHour].DKK_per_kWh.toFixed(3);
+    
 }
 
 
