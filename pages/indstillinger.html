@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/global-stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/nav-stylesheet-indstillinger.css">
+    <link rel="stylesheet" href="../assets/css/global-stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/nav-stylesheet-indstillinger.css">
 
     <!-- Java -->
-    <script type="module" src="./assets/js/index.js" defer></script>
-    <script type="module" src="./assets/js/global.js" defer></script>
+    <script type="module" src="../assets/js/global-indstillinger.js" defer></script>
 
 
     <!-- fontawsome -->
@@ -55,27 +54,42 @@
               </svg>
         </ul>
         <ul>
-            <li><a href="./pages/oversigt.html">oversigt</a></li>
-            <li><a href="index.html">lige nu</a></li>
-            <li><a href="./pages/historik.html">historik</a></li>
+            <li><a href="oversigt.html">oversigt</a></li>
+            <li><a href="../index.html">lige nu</a></li>
+            <li><a href="historik.html">historik</a></li>
         </ul>
     </nav>
 </header>
 <!-- main content -->
 <main>
-    <!-- overskrift -->
-    <secktion class="elpris">
-        <h2>indstillinger</h2>
-    </secktion>
+  <!-- overskrift -->
+  <secktion class="elpris">
+    <h2>indstillinger</h2>
+  </secktion>
 
-    <!-- indstillinges muligheder -->
+  <!-- indstillinges muligheder -->
 
-    <div class="settings-wrapper">
-        <p>priser inkl. moms</p>
-        <label class="toggle">
-            <input type="checkbox"/><span class="dot"></span>
-        </label>
-    </div>
+  <div class="settings-wrapper">
+    <p>priser inkl. moms</p>
+    <label class="toggle">
+      <input class="check-input" type="checkbox"><span class="dot"></span>
+    </label>
+  </div>
+  <div class="settings-wrapper">
+    <p>laveste pris alarm </p>
+    <label class="toggle">
+      <input type="checkbox"/><span class="dot"></span>
+    </label>
+  </div>
+  <div class="settings-wrapper">
+    <p>vælg Region </p>
+    <span id="arrowIcon"><i class="fa-solid fa-chevron-down"></i></span>
+    <select id="regionSelect">
+      <option value="option1">vælg region </option>
+      <option value="option2">region øst</option>
+      <option value="option3">region vest</option>
+    </select>
+  </div>
 
 </main>
 <!-- footer -->
@@ -84,7 +98,6 @@
     <p>Priserne er <span>ex. moms</span> og afgifter</p>
     <p>Du viser lige nu priserne for <span>Øst Danmark</span></p>
   </div></footer>
-  
- <!-- desktopview -->
+
 </body>
 </html> 

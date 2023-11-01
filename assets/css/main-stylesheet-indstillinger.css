@@ -3,12 +3,21 @@
 }
 
 .settings-wrapper {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 375px;
+    justify-content: space-between;
     align-items: center;
     gap: 0 50px;
+    margin: auto;
     margin-top: 49px;
+}
+
+.settings-wrapper p {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .toggle {
@@ -18,7 +27,7 @@
     flex-shrink: 0;
     border-radius: 64px;
     background: var(--dark);
-    border: 1px dashed var(--dark);
+    outline: 1px dashed var(--green);
 }
 
 .toggle input {
@@ -26,27 +35,68 @@
 }
 
 .toggle .dot {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background: var(--green);
-    right: 3px;
-    top: 3px;
     position: absolute;
     border-radius: 100%;
     transition: all 200ms ease;
+    right: 0;
+    top: 0;
+}
+
+.dot {
+    right: 3px;
+    top: 3px;
 }
 
 .toggle input:checked + .dot {
     right: 43px;
-    border: 2px dashed #55EC20;
+}
+.check-input:checked {
+outline: 1px dashed red;
+
 }
 
-
 .toggle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
     margin-left: -35px;
     margin-top: -15px;
     margin: 10px;
 }
+
+
+/* dropdown region vælger */
+select {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    padding: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+  
+option, select {
+    text-align: center;
+    border: none;
+    font-size: 10px;
+    font-weight: 300;
+    font-size: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: var(--dark);
+    color: var(--font);
+}
+
+#arrowIcon {
+    position: absolute;
+    right: 8px;
+    color: var(--green);
+    pointer-events: none;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+#arrowIcon.rotate i {
+    transform: rotate(180deg);
+  }
