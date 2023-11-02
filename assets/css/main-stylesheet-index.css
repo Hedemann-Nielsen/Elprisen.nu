@@ -57,7 +57,7 @@
 .mobile-wrapper {
     display: block;
 }
-@media (min-width: 600px) {
+@media (min-width: 400px) {
     .mobil-wrapper {
     display: none;
     }
