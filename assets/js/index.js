@@ -103,9 +103,6 @@ function formatTime(hour) {
 
 
 
-
-
-
 // History view
 //dato indput felt
 const dateIdput = document.querySelector('input[type="date"]');
@@ -181,4 +178,14 @@ function HistoryformatTime(hour) {
   const time = new Date();
   time.setHours(hour, 0, 0);
   return time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+}
+
+
+
+//service worker
+
+if('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('./sw.js')
+	.then(reg => console.log('service worker registered', reg))
+	.catch(err => console.error('service worker not registered', err)) 
 }

@@ -51,5 +51,3 @@ window.addEventListener('click', (event) => {
         modal.classList.replace('show', 'hide')
     }
 })
-
-
