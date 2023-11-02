@@ -32,21 +32,16 @@ regionSelect.addEventListener("click", () => {
 });
 
 // Modal open and close 
-const modal = document.getElementById(`modal`);
-const openModal = document.querySelector(`#openModal`);
-const closeModal = document.querySelector(`#closeModal`);
-const mainContent = document.getElementById("main");
+
+const modal = document.getElementById('modal');
+const openModal = document.getElementById('openModal');
+const closeModal = document.getElementById('closeModal');
 
 
 openModal.addEventListener(`click`, function () {
     modal.classList.replace(`hide`, `show`)
-    clearHTML();
 })
 
-function clearHTML() {
-    mainContent.innerHTML = "";
-
-}
 closeModal.addEventListener(`click`, function () {
     modal.classList.replace(`show`, `hide`)
 })

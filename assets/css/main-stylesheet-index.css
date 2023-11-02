@@ -73,6 +73,9 @@
     .desktop-nav-text span{
         text-transform: uppercase;
     }
+    .desktop-settings {
+        cursor: pointer;
+    }
     .grid-wrapper {
         display: flex;
         flex-direction: row;
