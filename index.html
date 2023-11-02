@@ -6,10 +6,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/global-stylesheet.css">
     <link rel="stylesheet" href="./assets/css/nav-stylesheet-index.css">
+    <link rel="stylesheet" href="./assets/css/main-styleshhet-historik.css">
     <!-- Java -->
     <script type="module" src="./assets/js/index.js" defer></script>
-    <script type="module" src="./assets/js/historik.js" defer></script>
-    <script type="module" src="./assets/js/oversigt.js" defer></script>
     <script type="module" src="./assets/js/global-indstillinger.js" defer></script>
 
     <!-- fontawsome -->
@@ -136,13 +135,14 @@
                     </svg>
                     <p class="desktop-nav-text"><span>elp</span>risen.nu</p>
                 </div>
-                <span><i class="fa-solid fa-gear desktop-settings"></i></span>
+                <span id="openModal"><i class="fa-solid fa-gear desktop-settings"></i></span>
             </ul>
         </nav>
     </header>
 
 <main class="grid-wrapper">
 
+                                        <!-- venstre del -->
 <div class="container1">
      <!-- overskrift -->
      <secktion class="elpris">
@@ -169,20 +169,147 @@
     <section class="tid" id="tid">
         <p>Tiden nu</p>
     </section>
-    <section class="nederstcontainer">
-
+    <div class="nederstcontainer-wrapper">
+    <section class="nederstcontainer venstre-oversigt">
+        <div class="venstre-pris">
+            <div class="yderst-ring">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                  <g filter="url(#filter0_di_2_183)">
+                    <circle cx="60" cy="60" r="56" fill="#201E1E"/>
+                    <circle cx="60" cy="60" r="55.5" stroke="black" stroke-opacity="0.1"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_di_2_183" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="2"/>
+                      <feComposite in2="hardAlpha" operator="out"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_183"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_183" result="shape"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect2_innerShadow_2_183"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="4"/>
+                      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0.358333 0 0 0 0 0.358333 0 0 0 0 0.358333 0 0 0 0.25 0"/>
+                      <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2_183"/>
+                    </filter>
+                  </defs>
+              </svg>
+            </div>
+            <div class="inderst-ring">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                  <circle cx="48" cy="48" r="48" fill="#201E1E"/>
+                  <circle cx="48" cy="48" r="47.5" stroke="#55EC20" stroke-opacity="0.75" stroke-dasharray="4 4"/>
+              </svg>
+            </div>
+            <div class="text-i-ring-wrapper">
+              <p class="venstre-pris line1" id="minimumPrice">prisen</p>
+              <p class="vesntre-pris line2">pr. kwh</p>
+            </div>
+          <h3>laveste pris</h3>
+          </div>
     </section>
+    <section class="nederstcontainer højre-oversigt">
+        
 
-
-
+        <div class="hoejre-pris">
+            <div class="yderst-ring">
+              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                  <g filter="url(#filter0_di_2_183)">
+                    <circle cx="60" cy="60" r="56" fill="#201E1E"/>
+                    <circle cx="60" cy="60" r="55.5" stroke="black" stroke-opacity="0.1"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_di_2_183" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="2"/>
+                      <feComposite in2="hardAlpha" operator="out"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_183"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_183" result="shape"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect2_innerShadow_2_183"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="4"/>
+                      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0.358333 0 0 0 0 0.358333 0 0 0 0 0.358333 0 0 0 0.25 0"/>
+                      <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2_183"/>
+                    </filter>
+                  </defs>
+              </svg>
+            </div>
+            <div class="inderst-ring">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                  <circle cx="48" cy="48" r="48" fill="#201E1E"/>
+                  <circle cx="48" cy="48" r="47.5" stroke="#55EC20" stroke-opacity="0.75" stroke-dasharray="4 4"/>
+              </svg>
+            </div>
+            <div class="text-i-ring-wrapper">
+              <p class="hoejre-pris line1" id="maximumPrice">prisen</p>
+              <p class="hoejre-pris line2">pr. kwh</p>
+            </div>
+            <h3>højeste pris</h3>
+          </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-desktop-wrapper">
+    <p>Priserne er <span>ex. moms</span> og afgifter</p>
+    <p>Du viser lige nu priserne for <span>Øst Danmark</span></p>
+  </div></footer>
     
 
 
 </div>
+                                        <!-- midterdel -->
 <div class="container2">
-    
+    <secktion class="elpris">
+        <h2>oversigt</h2>
+    </secktion>
+    <section class="container-wrapper">
+<div id="oversigt-container"></div><!-- generes fra JS -->
 </div>
-<div class="container3"></div>
+                                        <!-- højre del -->
+<div class="container3">
+    <secktion class="elpris">
+        <h2>historik</h2>
+    </secktion>
+    <!-- dato indput -->
+  <section class="selectDate" >
+    <i id="calendarIcon" class="fa-solid fa-calendar-days"></i>
+    <input type="date" name="" id="dateInput">
+  </section>
+  
+  <!-- grid med priser pr. time -->
+  <section class="container-wrapper">
+    <div class="Area-header"><h id="selectedDate">vælg dato</h2></div>
+    <div id="historik-container"></div><!-- generes fra JS -->
+    </div>
+  </section>
+</div>
+
+<!-- indstilliner modal -->
+<!-- <div id="modal" class="hide">
+    <div id="innerModal">
+        <h1>Modal window</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque vel dolor magni dignissimos consequatur,
+            praesentium corrupti quidem laboriosam quibusdam doloremque, placeat odio odit est numquam sequi tenetur
+            hic
+            sed ullam!</p>
+        <img src="./assets/image/IMG_2427.JPG" alt="">
+        <button type="button" id="closeModal">Click her to close modal </button>
+
+
+    </div>
+</div> -->
+
+
+
 </main>
 <div></div>
 </body>

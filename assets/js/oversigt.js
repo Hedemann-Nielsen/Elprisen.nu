@@ -37,7 +37,4 @@ async function oversigtEast() {
   minimumPrice.innerHTML = `${minPrice.toFixed(3)} KR`;
   const maximumPrice = document.getElementById('maxPrice');
   maximumPrice.innerHTML = `${maxPrice.toFixed(3)} KR`;
-
-  console.log("Highest price:", maxPrice);
-  console.log("Lowest price:", minPrice);
 }

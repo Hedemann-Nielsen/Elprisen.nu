@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// opdatere HTML-elementet med den valgte dato fra indput feltet
 const dateInput = document.getElementById('dateInput');
 const selectedDateElement = document.getElementById('selectedDate');
 
@@ -55,22 +56,40 @@ dateInput.addEventListener('change', () => {
 
 
 async function HistorikEast(url) {
+
+    //opret elementer til oversigt med opdaterede priser for hver time
+  const container = document.getElementById("historik-container");
+
   let { dataEast, error } = await getData(url);
   console.log(dataEast);
 
-  // Find den højeste og laveste pris i dataEast-arrayet
-  const prices = dataEast.map(item => item.DKK_per_kWh);
-  const maxPrice = Math.max(...prices);
-  const minPrice = Math.min(...prices);
-  const sum = maxPrice + minPrice;
-
   // Opdater HTML-elementerne med priserne
   for (let i = 0; i < dataEast.length; i++) {
-    const prisElement = document.getElementById(`pris${i}`);
-    prisElement.innerHTML = dataEast[i].DKK_per_kWh.toFixed(3);
-  }
+    const timeBox = document.createElement("div");
+    timeBox.classList.add("time-box");
 
-  console.log("Highest price:", maxPrice);
-  console.log("Lowest price:", minPrice);
-  console.log("Sum:", sum);
+    const timeElement = document.createElement("div");
+    timeElement.classList.add(`time${i}`, "time");
+    timeElement.textContent = formatTime(i);
+
+    const prisElement = document.createElement("div");
+    prisElement.id = `pris${i}`;
+    prisElement.classList.add("pris");
+
+    timeBox.appendChild(timeElement);
+    timeBox.appendChild(prisElement);
+
+    container.appendChild(timeBox);
+
+    const oversigtPrisElement = document.getElementById(`pris${i}`);
+    oversigtPrisElement.innerHTML = dataEast[i].DKK_per_kWh.toFixed(3);
+  }
 }
+
+// finder den aktuelle dato og tid og indstiller timen til xx.00
+function formatTime(hour) {
+  const time = new Date();
+  time.setHours(hour, 0, 0); // Set minutes and seconds to 0
+  return time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+}
+

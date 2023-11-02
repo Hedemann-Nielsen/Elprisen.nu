@@ -30,3 +30,31 @@ const arrowIcon = document.getElementById('arrowIcon');
 regionSelect.addEventListener("click", () => {
   arrowIcon.classList.toggle("rotate");
 });
+
+// Modal open and close 
+const modal = document.getElementById(`modal`);
+const openModal = document.querySelector(`#openModal`);
+const closeModal = document.querySelector(`#closeModal`);
+const mainContent = document.getElementById("main");
+
+
+openModal.addEventListener(`click`, function () {
+    modal.classList.replace(`hide`, `show`)
+    clearHTML();
+})
+
+function clearHTML() {
+    mainContent.innerHTML = "";
+
+}
+closeModal.addEventListener(`click`, function () {
+    modal.classList.replace(`show`, `hide`)
+})
+
+window.addEventListener('click', (event) => {
+    if (event.target.id === "modal") {
+        modal.classList.replace('show', 'hide')
+    }
+})
+
+
