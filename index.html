@@ -2,7 +2,9 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="En app hvor du kan blive opdateret på El priserne nu og her eller gå tilbage i tiden os se priserne for den seneste uge i et enkelt og overskueligt design">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#55EC20">
     <!-- Manifest -->
     <link rel="manifest" href="./manifest.json">
     <!-- CSS -->
@@ -27,7 +29,6 @@
 <header>
     <!-- navigation -->
     <nav class="navigation">
-        <ul>
             <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
                 <g filter="url(#filter0_di_2_982)">
                   <circle cx="23.5" cy="23.5" r="17.5" fill="#201E1E"/>
@@ -54,7 +55,6 @@
                   </filter>
                 </defs>
               </svg>
-        </ul>
         <ul>
             <li><a href="./pages/oversigt.html">oversigt</a></li>
             <li><a href="./index.html">lige nu</a></li>
@@ -106,7 +106,7 @@
     <div class="desktop-wrapper">
     <header>
         <nav class="nav-bar-desktop">
-            <ul class="nav-wrapper">
+            <div class="nav-wrapper">
                 <div class="left-side">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
                         <g filter="url(#filter0_di_2_982)">
@@ -137,7 +137,7 @@
                     <p class="desktop-nav-text"><span>elp</span>risen.nu</p>
                 </div>
                 <span ><i id="openModal" class="fa-solid fa-gear desktop-settings"></i></span>
-            </ul>
+              </div>
         </nav>
     </header>
 
@@ -283,7 +283,7 @@
     <!-- dato indput -->
   <section class="selectDate" >
     <i id="calendarIcon" class="fa-solid fa-calendar-days"></i>
-    <input type="date" name="" id="dateInput">
+    <input type="date" name="" id="dateInput" aria-label="date" aria-labelledby="date">
   </section>
   
   <!-- grid med priser pr. time -->

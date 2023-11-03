@@ -12,16 +12,37 @@ self.addEventListener('install', (event) => {
       console.log('skriv til alle statisk cache');
 
       return cache.addAll [
-  './assets/css/mainstylesheet.css',
-  'assets/logos/mainIcon.ico',
-  './assets/images/screenshotNarrow1.png',
-  './assets/images/screenshotNarrow2.png',
-  './assets/images/screenshotNarrow3.png',
-  './assets/images/screenshotWide.png',
-  './pages/fallback.html',
-  '/manifest.json',
-  '/index.html'
-]
+        // CSS
+        './assets/css/global-stylesheet.css',
+        './assets/css/main-stylesheet-index.css',
+        './assets/css/main-stylesheet-indstillinger.css',
+        './assets/css/main-stylesheet-oversigt.css',
+        './assets/css/main-styleshhet-historik.css',
+        './assets/css/nav-stylesheet-historik.css',
+        './assets/css/nav-stylesheet-index.css',
+        './assets/css/nav-stylesheet-indstillinger.css',
+        './assets/css/nav-stylesheet-oversigt.css',
+        // JS
+        './assets/js/controller.js',
+        './assets/js/global-indstillinger.js',
+        './assets/js/historik.js',
+        './assets/js/index.js',
+        './assets/js/oversigt.js',
+        // pages
+        './pages/historik.html',
+        './pages/indstillinger.html',
+        './pages/oversigt.html',
+        './index.html',
+        // images
+        './assets/logos/mainIcon.ico',
+        './assets/images/screenshotNarrow1.png',
+        './assets/images/screenshotNarrow2.png',
+        './assets/images/screenshotNarrow3.png',
+        './assets/images/screenshotWide.png',
+        // serviceworker
+        './pages/fallback.html',
+        './manifest.json'
+      ]
     }),
   );
 });

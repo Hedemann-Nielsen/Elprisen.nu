@@ -26,6 +26,11 @@ input[type="date"]:focus {
 outline: none;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: transparent;
+}
+
 .fa-calendar-days {
     position: absolute;
     top: 12px;

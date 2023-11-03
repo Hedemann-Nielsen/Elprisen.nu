@@ -35,7 +35,9 @@
       ],  "icons": [
         {
           "src": "./assets/logos/windows11/SmallTile.scale-100.png",
-          "sizes": "71x71"
+          "sizes": "71x71",
+          "purpose": "any maskable"
+
         },
         {
           "src": "./assets/logos/windows11/SmallTile.scale-125.png",
