@@ -1,7 +1,8 @@
+/* overskrift */
 .elpris h2 {
     margin-top: 50px;
 }
-
+/* indstillinger  */
 .settings-wrapper {
     position: relative;
     display: flex;
@@ -20,6 +21,7 @@
     text-transform: uppercase;
 }
 
+/* knap til højre */
 .toggle {
     position: relative;
     width: 63px;
@@ -44,12 +46,12 @@
     right: 0;
     top: 0;
 }
-
+/* cirkel i midten */
 .dot {
     right: 3px;
     top: 3px;
 }
-
+/* cirkel flytter sig ved click */
 .toggle input:checked + .dot {
     right: 43px;
 }

@@ -12,7 +12,7 @@ if (day < 10) {
 }
 
 const priceEast = 'DK2';
-// const priceWest = "DK1";
+// const priceWest = "DK1"; skal bruges til at ændre prisen fra øst til vest 
 
 const url = `https://www.elprisenligenu.dk/api/v1/prices/${year}/${month}-${day}_${priceEast}.json`;
 console.log(month);
@@ -149,10 +149,10 @@ dateInput.addEventListener('change', () => {
 
 async function HistorikEast(url) {
   const container = document.getElementById("historik-container");
-  const hoursInDay = 24; // Number of hours in a day
+  const hoursInDay = 24;
   let { dataEast, error } = await getData(url);
 
-  // Create time boxes for all hours in the day
+  // opret HTML elementer for historik
   for (let i = 0; i < hoursInDay; i++) {
     const timeBox = document.createElement("div");
     timeBox.classList.add("time-box");

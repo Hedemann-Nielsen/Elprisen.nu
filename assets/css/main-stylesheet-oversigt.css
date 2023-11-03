@@ -1,3 +1,5 @@
+
+/* oversigts cirkler max og min pris */
 .pris-hjul-wrapper {
     display: flex;
     flex-direction: row;
@@ -104,3 +106,17 @@ h3 {
     font-size: 15px;
     font-weight: 300;
 }
+
+/* farveskift */
+
+  .green {
+    color: green;
+  }
+
+  .yellow {
+    color: yellow;
+  }
+
+  .red {
+    color: red;
+  }

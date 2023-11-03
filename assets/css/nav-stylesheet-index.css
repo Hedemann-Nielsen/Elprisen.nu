@@ -41,7 +41,6 @@
 /* Desktop view */
 .nav-bar-desktop{
     background-color: var(--dark);
-
     position: sticky;
     z-index: 10;
     top: 0;
@@ -50,7 +49,6 @@
 }
 .nav-bar-desktop{
     background-color: var(--dark);
-
     position: sticky;
     z-index: 10;
     top: 0;
@@ -83,8 +81,6 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
-
-    /* margin-top: 5px; */
 }
 
 .desktop-settings {

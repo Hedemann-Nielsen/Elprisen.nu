@@ -11,7 +11,7 @@ if (day < 10) {
   day = day;
 }
 const priceEast = 'DK2';
-// const priceWest = "DK1";
+// const priceWest = "DK1"; skal bruges til at ændre prisen fra øst til vest 
 
 const url = `https://www.elprisenligenu.dk/api/v1/prices/${year}/${month}-${day}_${priceEast}.json`;
 
@@ -26,10 +26,22 @@ async function oversigtEast() {
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);
   
-  // Opdater HTML-elementerne med priserne
+  // Opdater HTML-elementerne med priserne i 3 forskellige farver
+
   for (let i = 0; i < dataEast.length; i++) {
     const prisElement = document.getElementById(`pris${i}`);
-    prisElement.innerHTML = dataEast[i].DKK_per_kWh.toFixed(3);
+    const pris = dataEast[i].DKK_per_kWh.toFixed(3);
+  
+    // Tilføj farveændring
+    if (pris === minPrice.toFixed(3)) {
+      prisElement.style.color = 'green';
+    } else if (pris === maxPrice.toFixed(3)) {
+      prisElement.style.color = 'red';
+    } else {
+      prisElement.style.color = 'yellow';
+    }
+  
+    prisElement.innerHTML = pris;
   }
   
   // Opdater HTML-elementerne med højeste og laveste pris

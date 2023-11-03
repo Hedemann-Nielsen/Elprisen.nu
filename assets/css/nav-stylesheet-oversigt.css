@@ -8,10 +8,8 @@
     justify-content:space-around;
 }
 .navigation ul {
-    /* background-color: re d; */
     display: flex;
     list-style: none;
-    /* text-align: center; */
     margin: auto;
 }
 

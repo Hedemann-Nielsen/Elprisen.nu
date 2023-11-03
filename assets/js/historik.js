@@ -6,7 +6,7 @@ const month = today.getMonth() + 1;
 const day = today.getDate();
 
 const priceEast = 'DK2';
-// const priceWest = "DK1";
+// const priceWest = "DK1"; skal bruges til at ændre prisen fra øst til vest 
 
 const url = `https://www.elprisenligenu.dk/api/v1/prices/${year}/${month}-${day}_${priceEast}.json`;
 
